@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
- <meta name="google-site-verification" content="u1giAypMGNzBljIyvIO8WpAdpqbsA0qXGcVcXbTJhOI" />
-<title>KeithWeldingAndMetalllc | Professional Iron Works Services Brooklyn, NY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>U.S. Pool Builder | Professional Pool Construction in Katy, TX</title>
 
-<meta name="description" content="KeithWeldingAndMetalllc provides professional Metal Fabrication, Aluminum Fabrication, Ornamental Fabrication, Custom Welding, and Metal Repair & Restoration services in Brooklyn, NY.">
+<meta name="description" content="U.S. Pool Builder specializes in inground gunite concrete pools, custom pool construction, and new pool builds in Katy, TX.">
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
@@ -15,6 +15,7 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial, sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
@@ -22,22 +23,15 @@ line-height:1.6;
 color:#333;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 header{
 background:#000;
 padding:15px 5%;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-.navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
+position:sticky;
+top:0;
+z-index:999;
 }
 
 .logo{
@@ -48,8 +42,8 @@ gap:10px;
 
 .logo img{
 width:60px;
-height:60px;
-object-fit:contain;
+height:auto;
+border-radius:6px;
 }
 
 .logo h1{
@@ -71,81 +65,83 @@ transition:.3s;
 }
 
 nav ul li a:hover{
-color:#ff4500;
+color:#00cfff;
 }
 
 .hero{
-background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600');
-background-size:cover;
-background-position:center;
-height:90vh;
 display:flex;
 align-items:center;
-justify-content:center;
-text-align:center;
+justify-content:space-between;
+padding:80px 8%;
+background:linear-gradient(to right,#000,#0c2233);
 color:#fff;
-padding:20px;
+flex-wrap:wrap;
 }
 
-.hero-content h2{
-font-size:52px;
-margin-bottom:15px;
+.hero-text{
+flex:1;
+min-width:300px;
 }
 
-.hero-content p{
-max-width:700px;
-margin:auto;
+.hero-text h2{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-text p{
 font-size:18px;
 margin-bottom:25px;
 }
 
 .btn{
 display:inline-block;
-background:#ff4500;
-color:#fff;
 padding:14px 30px;
+background:#00cfff;
+color:#000;
 text-decoration:none;
-border-radius:5px;
 font-weight:bold;
-margin:5px;
+border-radius:5px;
+margin-right:10px;
 }
 
-.btn:hover{
-background:#d93900;
+.hero-image{
+flex:1;
+text-align:center;
+min-width:300px;
+}
+
+.hero-image img{
+width:100%;
+max-width:550px;
+border-radius:10px;
 }
 
 section{
-padding:80px 8%;
+padding:70px 8%;
 }
 
 .section-title{
 text-align:center;
-font-size:38px;
-margin-bottom:50px;
-color:#111;
+font-size:36px;
+margin-bottom:40px;
+color:#0c2233;
 }
 
 .about{
-background:#f7f7f7;
+background:#f5f5f5;
 }
 
 .services-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+gap:25px;
 }
 
 .service-card{
 background:#fff;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 border-radius:10px;
 overflow:hidden;
-box-shadow:0 0 15px rgba(0,0,0,0.1);
-transition:.3s;
-}
-
-.service-card:hover{
-transform:translateY(-8px);
 }
 
 .service-card img{
@@ -162,52 +158,47 @@ padding:20px;
 margin-bottom:10px;
 }
 
-.reviews{
-background:#f7f7f7;
-}
-
-.review-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.review{
-background:#fff;
-padding:25px;
-border-radius:10px;
-box-shadow:0 0 15px rgba(0,0,0,0.1);
-}
-
 .blog-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
+gap:25px;
 }
 
 .blog-card{
 background:#fff;
-box-shadow:0 0 15px rgba(0,0,0,0.1);
-border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 padding:25px;
+border-radius:10px;
+}
+
+.review-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.review{
+background:#f8f8f8;
+padding:25px;
+border-left:5px solid #00cfff;
+border-radius:8px;
 }
 
 .faq-item{
 margin-bottom:20px;
-background:#f8f8f8;
+background:#f7f7f7;
 padding:20px;
-border-left:4px solid #ff4500;
+border-radius:8px;
 }
 
 .contact{
-background:#111;
-color:#fff;
+background:#f5f5f5;
 }
 
-.contact-grid{
+.contact-info{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 footer{
@@ -227,18 +218,25 @@ color:#fff;
 text-decoration:none;
 }
 
-.whatsapp{
+.copyright{
+text-align:center;
+margin-top:30px;
+border-top:1px solid #444;
+padding-top:20px;
+}
+
+.whatsapp-btn{
 position:fixed;
-right:20px;
 bottom:20px;
+right:20px;
 background:#25D366;
 color:#fff;
 width:60px;
 height:60px;
 border-radius:50%;
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
 font-size:30px;
 text-decoration:none;
 z-index:999;
@@ -246,48 +244,49 @@ z-index:999;
 
 .call-btn{
 position:fixed;
-left:20px;
-bottom:20px;
-background:#ff4500;
-color:#fff;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
+bottom:90px;
+right:20px;
+background:#00cfff;
+color:#000;
+padding:12px 20px;
+border-radius:30px;
 font-weight:bold;
+text-decoration:none;
 z-index:999;
 }
 
 iframe{
 width:100%;
-height:300px;
+height:250px;
 border:none;
 border-radius:10px;
 }
 
 @media(max-width:768px){
-.navbar{
+.hero{
 flex-direction:column;
+text-align:center;
 }
+
+.hero-text h2{
+font-size:35px;
+}
+
 nav ul{
 flex-wrap:wrap;
 justify-content:center;
-margin-top:15px;
-}
-.hero-content h2{
-font-size:34px;
 }
 }
 </style>
 </head>
-
 <body>
 
+<!-- HEADER -->
 <header>
-<div class="navbar">
 
 <div class="logo">
-<img src="Logo.jpg" alt="KeithWeldingAndMetalllc Logo">
-<h1>KeithWeldingAndMetalllc</h1>
+<img src="Logo.webp" alt="U.S. Pool Builder Logo">
+<h1>U.S. Pool Builder</h1>
 </div>
 
 <nav>
@@ -301,175 +300,216 @@ font-size:34px;
 </ul>
 </nav>
 
-</div>
 </header>
 
+<!-- HERO SECTION -->
 <section class="hero" id="home">
-<div class="hero-content">
-<h2>Professional Iron Works & Welding Services in Brooklyn, NY</h2>
+
+<div class="hero-text">
+<h2>Custom Gunite Concrete Pool Builders in Katy, TX</h2>
+
 <p>
-KeithWeldingAndMetalllc delivers high-quality fabrication, welding, restoration, and custom metal solutions with skilled craftsmanship and reliable service.
+U.S. Pool Builder specializes in custom inground gunite concrete pools designed to match your vision, lifestyle, and outdoor space. We focus on quality craftsmanship, durability, and stunning pool construction.
 </p>
 
-<a href="tel:+19172026005" class="btn">Call Now</a>
-<a href="#services" class="btn">Our Services</a>
+<a href="tel:2819448888" class="btn">Call Now</a>
+<a href="#contact" class="btn">Get Free Estimate</a>
 </div>
+
+<div class="hero-image">
+<img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=900" alt="Luxury Pool">
+</div>
+
 </section>
 
+<!-- ABOUT -->
 <section class="about" id="about">
+
 <h2 class="section-title">About Us</h2>
 
 <p>
-Welcome to KeithWeldingAndMetalllc, your trusted source for professional iron works and metal fabrication services in Brooklyn, NY. We specialize in delivering durable, precise, and custom metal solutions for residential and commercial clients.
+Welcome to U.S. Pool Builder, your trusted partner for professional pool construction in Katy, Texas. We specialize in building high-quality inground gunite concrete pools that are designed for durability, beauty, and long-term enjoyment.
 </p>
 
 <br>
 
 <p>
-Our team focuses on quality craftsmanship, attention to detail, and customer satisfaction. Whether you need custom welding, ornamental fabrication, aluminum fabrication, or restoration work, we are committed to providing dependable results that stand the test of time.
+Our team works closely with homeowners to create custom swimming pools that fit their lifestyle and outdoor living goals. Unlike many builders, we focus exclusively on concrete gunite pools and do not offer fiberglass pools, ensuring superior customization and structural strength.
 </p>
+
 </section>
 
+<!-- SERVICES -->
 <section id="services">
+
 <h2 class="section-title">Our Services</h2>
 
 <div class="services-grid">
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800" alt="">
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800" alt="">
 <div class="service-content">
-<h3>Metal Fabrication</h3>
-<p>Custom metal fabrication solutions built with precision, durability, and expert craftsmanship for residential and commercial projects.</p>
+<h3>Inground Gunite Concrete Pools</h3>
+<p>
+Custom-built gunite concrete pools designed for strength, flexibility, and long-lasting performance.
+</p>
 </div>
 </div>
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800" alt="">
+<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800" alt="">
 <div class="service-content">
-<h3>Aluminum Fabrication</h3>
-<p>Professional aluminum fabrication services for lightweight, strong, and corrosion-resistant metal structures and components.</p>
+<h3>New Pool Construction</h3>
+<p>
+Complete pool construction services from planning and design to excavation and final installation.
+</p>
 </div>
 </div>
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800" alt="">
 <div class="service-content">
-<h3>Ornamental Fabrication</h3>
-<p>Elegant ornamental metalwork designed to enhance the appearance and value of your property.</p>
-</div>
-</div>
-
-<div class="service-card">
-<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800" alt="">
-<div class="service-content">
-<h3>Metal Repair & Restoration</h3>
-<p>Restore damaged or aging metal structures with professional repair and restoration solutions.</p>
+<h3>No Fiberglass Pools</h3>
+<p>
+We focus exclusively on premium gunite concrete pools, providing greater design freedom and durability.
+</p>
 </div>
 </div>
 
 </div>
+
 </section>
 
-<section class="reviews">
+<!-- REVIEWS -->
+<section>
+
 <h2 class="section-title">Customer Reviews</h2>
 
-<div class="review-grid">
+<div class="review-container">
 
 <div class="review">
 ★★★★★
-<p>Excellent welding work and outstanding customer service. Highly recommend KeithWeldingAndMetalllc.</p>
+<p>
+"U.S. Pool Builder delivered an amazing custom pool for our family. The workmanship and communication were excellent."
+</p>
 <strong>- Michael R.</strong>
 </div>
 
 <div class="review">
 ★★★★★
-<p>The team completed our custom metal project on time and exceeded expectations.</p>
+<p>
+"Our backyard was transformed into a beautiful outdoor retreat. Highly recommend this team."
+</p>
 <strong>- Sarah T.</strong>
 </div>
 
 <div class="review">
 ★★★★★
-<p>Professional craftsmanship and fair pricing. We will definitely use them again.</p>
-<strong>- David L.</strong>
+<p>
+"The project was completed professionally and the final result exceeded our expectations."
+</p>
+<strong>- David P.</strong>
 </div>
 
 </div>
+
 </section>
 
+<!-- BLOG -->
 <section id="blog">
-<h2 class="section-title">Latest Blog</h2>
+
+<h2 class="section-title">Latest Blog Posts</h2>
 
 <div class="blog-grid">
 
 <div class="blog-card">
-<h3>Benefits of Custom Metal Fabrication</h3>
-<p>Discover how custom fabrication provides stronger, longer-lasting solutions for unique projects.</p>
-</div>
-
-<div class="blog-card">
-<h3>When to Repair Metal Structures</h3>
-<p>Learn the warning signs that indicate your metal components need professional restoration.</p>
-</div>
-
-<div class="blog-card">
-<h3>Choosing the Right Welding Service</h3>
-<p>Important factors to consider before hiring a welding contractor for your next project.</p>
-</div>
-
-</div>
-</section>
-
-<section id="faq">
-<h2 class="section-title">Frequently Asked Questions</h2>
-
-<div class="faq-item">
-<h3>Do you provide free estimates?</h3>
-<p>Yes, we offer free quotes for all welding and fabrication projects.</p>
-</div>
-
-<div class="faq-item">
-<h3>Do you handle custom metal projects?</h3>
-<p>Absolutely. We specialize in custom welding and fabrication tailored to client needs.</p>
-</div>
-
-<div class="faq-item">
-<h3>What areas do you serve?</h3>
-<p>We proudly serve Brooklyn, NY and surrounding areas.</p>
-</div>
-
-<div class="faq-item">
-<h3>Do you offer restoration services?</h3>
-<p>Yes, we provide professional metal repair and restoration solutions.</p>
-</div>
-
-</section>
-
-<section class="contact" id="contact">
-<h2 class="section-title" style="color:white;">Contact Us</h2>
-
-<div class="contact-grid">
-
-<div>
-<h3>Business Information</h3>
-<p><strong>Address:</strong><br>29 E 98th ST, Unit 29, Brooklyn, NY 11212</p>
-<br>
-<p><strong>Phone:</strong><br>(917) 202-6005</p>
-<br>
-<p><strong>Email:</strong><br>KeithWeldingandMetalLLC@gmail.com</p>
-<br>
-<p><strong>Hours:</strong><br>
-Mon - Fri: 08:00 AM - 05:00 PM<br>
-Sat: 09:00 AM - 05:00 PM
+<h3>Benefits of Gunite Pools</h3>
+<p>
+Learn why gunite concrete pools are one of the most durable and customizable pool options available today.
 </p>
 </div>
 
-<div>
-<iframe src="https://maps.google.com/maps?q=Brooklyn%20NY&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+<div class="blog-card">
+<h3>Pool Design Trends for 2026</h3>
+<p>
+Explore the latest swimming pool designs, features, and outdoor living enhancements.
+</p>
+</div>
+
+<div class="blog-card">
+<h3>Planning a New Pool Project</h3>
+<p>
+Important factors homeowners should consider before starting a custom pool build.
+</p>
 </div>
 
 </div>
+
 </section>
 
+<!-- FAQ -->
+<section id="faq">
+
+<h2 class="section-title">Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<h3>Do you build fiberglass pools?</h3>
+<p>No. We specialize exclusively in inground gunite concrete pools.</p>
+</div>
+
+<div class="faq-item">
+<h3>How long does pool construction take?</h3>
+<p>Project timelines vary depending on design and site conditions, but most projects take several weeks.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can I customize my pool design?</h3>
+<p>Absolutely. Every pool is custom-designed to match your property and lifestyle.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you provide free estimates?</h3>
+<p>Yes. Contact us today for a consultation and project estimate.</p>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact-info">
+
+<div>
+<h3>Address</h3>
+<p>24044 Cinco Village Center Blvd, Suite 100, Katy, TX 77494, United States</p>
+</div>
+
+<div>
+<h3>Phone</h3>
+<p><a href="tel:2819448888">(281) 944-8888</a></p>
+</div>
+
+<div>
+<h3>Email</h3>
+<p><a href="mailto:info@USPoolBuilder.com">info@USPoolBuilder.com</a></p>
+</div>
+
+<div>
+<h3>Working Hours</h3>
+<p>Mon - Sat: 24 Hours</p>
+</div>
+
+</div>
+
+<br><br>
+
+<iframe src="https://maps.google.com/maps?q=24044%20Cinco%20Village%20Center%20Blvd%20Suite%20100%20Katy%20TX%2077494&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</section>
+
+<!-- FOOTER -->
 <footer>
 
 <div class="footer-grid">
@@ -485,33 +525,40 @@ Sat: 09:00 AM - 05:00 PM
 
 <div>
 <h3>Contact Information</h3>
-<p>29 E 98th ST, Unit 29, Brooklyn, NY 11212</p>
-<p>(917) 202-6005</p>
-<p>KeithWeldingandMetalLLC@gmail.com</p>
+<p>📍 24044 Cinco Village Center Blvd, Suite 100, Katy, TX 77494</p>
+<p>📞 (281) 944-8888</p>
+<p>✉️ info@USPoolBuilder.com</p>
 </div>
 
 <div>
 <h3>Working Hours</h3>
-<p>Mon - Fri: 08:00 AM - 05:00 PM</p>
-<p>Sat: 09:00 AM - 05:00 PM</p>
+<p>Mon - Sat: 24 Hours</p>
 </div>
 
-</div>
-
-<br><hr><br>
-
-<p style="text-align:center;">
-© 2026 The Ranking Geeks. All Rights Reserved.
+<div>
+<h3>Google Business Profile</h3>
+<p>
+<a href="https://maps.app.goo.gl/T3pa1wprCmvcbkCR8" target="_blank">
+View on Google Maps
+</a>
 </p>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 The Ranking Geeks. All Rights Reserved.
+</div>
 
 </footer>
 
-<a href="https://wa.me/19172026005" class="whatsapp">
-<i class="fab fa-whatsapp"></i>
+<!-- FLOATING BUTTONS -->
+<a href="tel:2819448888" class="call-btn">
+<i class="fas fa-phone"></i> Call Now
 </a>
 
-<a href="tel:+19172026005" class="call-btn">
-Call Now
+<a href="https://wa.me/12819448888" class="whatsapp-btn" target="_blank">
+<i class="fab fa-whatsapp"></i>
 </a>
 
 </body>
