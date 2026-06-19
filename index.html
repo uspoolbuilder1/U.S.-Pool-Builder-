@@ -1,1 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KeithWeldingAndMetalllc | Professional Iron Works Services Brooklyn, NY</title>
 
+<meta name="description" content="KeithWeldingAndMetalllc provides professional Metal Fabrication, Aluminum Fabrication, Ornamental Fabrication, Custom Welding, and Metal Repair & Restoration services in Brooklyn, NY.">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+line-height:1.6;
+color:#333;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+header{
+background:#000;
+padding:15px 5%;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:60px;
+height:60px;
+object-fit:contain;
+}
+
+.logo h1{
+color:#fff;
+font-size:22px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ff4500;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600');
+background-size:cover;
+background-position:center;
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#fff;
+padding:20px;
+}
+
+.hero-content h2{
+font-size:52px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+background:#ff4500;
+color:#fff;
+padding:14px 30px;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+margin:5px;
+}
+
+.btn:hover{
+background:#d93900;
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+margin-bottom:50px;
+color:#111;
+}
+
+.about{
+background:#f7f7f7;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:#fff;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 0 15px rgba(0,0,0,0.1);
+transition:.3s;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+.service-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.service-content{
+padding:20px;
+}
+
+.service-content h3{
+margin-bottom:10px;
+}
+
+.reviews{
+background:#f7f7f7;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.review{
+background:#fff;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.blog-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.blog-card{
+background:#fff;
+box-shadow:0 0 15px rgba(0,0,0,0.1);
+border-radius:10px;
+padding:25px;
+}
+
+.faq-item{
+margin-bottom:20px;
+background:#f8f8f8;
+padding:20px;
+border-left:4px solid #ff4500;
+}
+
+.contact{
+background:#111;
+color:#fff;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+footer{
+background:#000;
+color:#fff;
+padding:50px 8%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+footer a{
+color:#fff;
+text-decoration:none;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:#fff;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+z-index:999;
+}
+
+.call-btn{
+position:fixed;
+left:20px;
+bottom:20px;
+background:#ff4500;
+color:#fff;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+z-index:999;
+}
+
+iframe{
+width:100%;
+height:300px;
+border:none;
+border-radius:10px;
+}
+
+@media(max-width:768px){
+.navbar{
+flex-direction:column;
+}
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+margin-top:15px;
+}
+.hero-content h2{
+font-size:34px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="navbar">
+
+<div class="logo">
+<img src="Logo.jpg" alt="KeithWeldingAndMetalllc Logo">
+<h1>KeithWeldingAndMetalllc</h1>
+</div>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#contact">Contact Us</a></li>
+<li><a href="#faq">FAQ's</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<h2>Professional Iron Works & Welding Services in Brooklyn, NY</h2>
+<p>
+KeithWeldingAndMetalllc delivers high-quality fabrication, welding, restoration, and custom metal solutions with skilled craftsmanship and reliable service.
+</p>
+
+<a href="tel:+19172026005" class="btn">Call Now</a>
+<a href="#services" class="btn">Our Services</a>
+</div>
+</section>
+
+<section class="about" id="about">
+<h2 class="section-title">About Us</h2>
+
+<p>
+Welcome to KeithWeldingAndMetalllc, your trusted source for professional iron works and metal fabrication services in Brooklyn, NY. We specialize in delivering durable, precise, and custom metal solutions for residential and commercial clients.
+</p>
+
+<br>
+
+<p>
+Our team focuses on quality craftsmanship, attention to detail, and customer satisfaction. Whether you need custom welding, ornamental fabrication, aluminum fabrication, or restoration work, we are committed to providing dependable results that stand the test of time.
+</p>
+</section>
+
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800" alt="">
+<div class="service-content">
+<h3>Metal Fabrication</h3>
+<p>Custom metal fabrication solutions built with precision, durability, and expert craftsmanship for residential and commercial projects.</p>
+</div>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800" alt="">
+<div class="service-content">
+<h3>Aluminum Fabrication</h3>
+<p>Professional aluminum fabrication services for lightweight, strong, and corrosion-resistant metal structures and components.</p>
+</div>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="">
+<div class="service-content">
+<h3>Ornamental Fabrication</h3>
+<p>Elegant ornamental metalwork designed to enhance the appearance and value of your property.</p>
+</div>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1581092919535-7146ff1a5905?w=800" alt="">
+<div class="service-content">
+<h3>Custom Welding</h3>
+<p>Expert custom welding services tailored to meet your project specifications and performance requirements.</p>
+</div>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800" alt="">
+<div class="service-content">
+<h3>Metal Repair & Restoration</h3>
+<p>Restore damaged or aging metal structures with professional repair and restoration solutions.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="reviews">
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="review-grid">
+
+<div class="review">
+★★★★★
+<p>Excellent welding work and outstanding customer service. Highly recommend KeithWeldingAndMetalllc.</p>
+<strong>- Michael R.</strong>
+</div>
+
+<div class="review">
+★★★★★
+<p>The team completed our custom metal project on time and exceeded expectations.</p>
+<strong>- Sarah T.</strong>
+</div>
+
+<div class="review">
+★★★★★
+<p>Professional craftsmanship and fair pricing. We will definitely use them again.</p>
+<strong>- David L.</strong>
+</div>
+
+</div>
+</section>
+
+<section id="blog">
+<h2 class="section-title">Latest Blog</h2>
+
+<div class="blog-grid">
+
+<div class="blog-card">
+<h3>Benefits of Custom Metal Fabrication</h3>
+<p>Discover how custom fabrication provides stronger, longer-lasting solutions for unique projects.</p>
+</div>
+
+<div class="blog-card">
+<h3>When to Repair Metal Structures</h3>
+<p>Learn the warning signs that indicate your metal components need professional restoration.</p>
+</div>
+
+<div class="blog-card">
+<h3>Choosing the Right Welding Service</h3>
+<p>Important factors to consider before hiring a welding contractor for your next project.</p>
+</div>
+
+</div>
+</section>
+
+<section id="faq">
+<h2 class="section-title">Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<h3>Do you provide free estimates?</h3>
+<p>Yes, we offer free quotes for all welding and fabrication projects.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you handle custom metal projects?</h3>
+<p>Absolutely. We specialize in custom welding and fabrication tailored to client needs.</p>
+</div>
+
+<div class="faq-item">
+<h3>What areas do you serve?</h3>
+<p>We proudly serve Brooklyn, NY and surrounding areas.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you offer restoration services?</h3>
+<p>Yes, we provide professional metal repair and restoration solutions.</p>
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+<h2 class="section-title" style="color:white;">Contact Us</h2>
+
+<div class="contact-grid">
+
+<div>
+<h3>Business Information</h3>
+<p><strong>Address:</strong><br>29 E 98th ST, Unit 29, Brooklyn, NY 11212</p>
+<br>
+<p><strong>Phone:</strong><br>(917) 202-6005</p>
+<br>
+<p><strong>Email:</strong><br>KeithWeldingandMetalLLC@gmail.com</p>
+<br>
+<p><strong>Hours:</strong><br>
+Mon - Fri: 08:00 AM - 05:00 PM<br>
+Sat: 09:00 AM - 05:00 PM
+</p>
+</div>
+
+<div>
+<iframe src="https://maps.google.com/maps?q=Brooklyn%20NY&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+
+</div>
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>Quick Links</h3>
+<p><a href="#home">Home</a></p>
+<p><a href="#about">About Us</a></p>
+<p><a href="#services">Services</a></p>
+<p><a href="#blog">Blog</a></p>
+<p><a href="#contact">Contact</a></p>
+</div>
+
+<div>
+<h3>Contact Information</h3>
+<p>29 E 98th ST, Unit 29, Brooklyn, NY 11212</p>
+<p>(917) 202-6005</p>
+<p>KeithWeldingandMetalLLC@gmail.com</p>
+</div>
+
+<div>
+<h3>Working Hours</h3>
+<p>Mon - Fri: 08:00 AM - 05:00 PM</p>
+<p>Sat: 09:00 AM - 05:00 PM</p>
+</div>
+
+</div>
+
+<br><hr><br>
+
+<p style="text-align:center;">
+© 2026 The Ranking Geeks. All Rights Reserved.
+</p>
+
+</footer>
+
+<a href="https://wa.me/19172026005" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="tel:+19172026005" class="call-btn">
+Call Now
+</a>
+
+</body>
+</html>
