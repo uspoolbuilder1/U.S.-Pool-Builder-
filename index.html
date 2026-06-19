@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>U.S. Pool Builder | Professional Pool Construction in Katy, TX</title>
+<title>U.S. Pool Builder | Katy, TX</title>
 
-<meta name="description" content="U.S. Pool Builder specializes in inground gunite concrete pools, custom pool construction, and new pool builds in Katy, TX.">
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 *{
@@ -26,105 +24,97 @@ color:#333;
 header{
 background:#000;
 padding:15px 5%;
-display:flex;
-justify-content:space-between;
-align-items:center;
 position:sticky;
 top:0;
 z-index:999;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 .logo{
 display:flex;
 align-items:center;
 gap:10px;
+color:#fff;
+font-size:24px;
+font-weight:bold;
 }
 
 .logo img{
-width:60px;
-height:auto;
-border-radius:6px;
+height:60px;
+width:auto;
 }
 
-.logo h1{
-color:#fff;
-font-size:22px;
-}
-
-nav ul{
+.nav-links{
 display:flex;
 list-style:none;
 gap:25px;
 }
 
-nav ul li a{
-color:#fff;
+.nav-links a{
 text-decoration:none;
+color:#fff;
 font-weight:bold;
 transition:.3s;
 }
 
-nav ul li a:hover{
-color:#00cfff;
+.nav-links a:hover{
+color:#00c3ff;
 }
 
 .hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=1400&q=80');
+background-size:cover;
+background-position:center;
 display:flex;
 align-items:center;
-justify-content:space-between;
-padding:80px 8%;
-background:linear-gradient(to right,#000,#0c2233);
+justify-content:center;
+text-align:center;
 color:#fff;
-flex-wrap:wrap;
+padding:20px;
 }
 
-.hero-text{
-flex:1;
-min-width:300px;
-}
-
-.hero-text h2{
-font-size:48px;
+.hero-content h1{
+font-size:55px;
 margin-bottom:20px;
 }
 
-.hero-text p{
-font-size:18px;
+.hero-content p{
+max-width:800px;
+margin:auto;
+font-size:20px;
 margin-bottom:25px;
 }
 
 .btn{
 display:inline-block;
-padding:14px 30px;
-background:#00cfff;
-color:#000;
+background:#00c3ff;
+color:#fff;
+padding:15px 30px;
 text-decoration:none;
-font-weight:bold;
 border-radius:5px;
-margin-right:10px;
+font-weight:bold;
 }
 
-.hero-image{
-flex:1;
-text-align:center;
-min-width:300px;
-}
-
-.hero-image img{
-width:100%;
-max-width:550px;
-border-radius:10px;
+.btn:hover{
+background:#008fc0;
 }
 
 section{
-padding:70px 8%;
+padding:80px 10%;
 }
 
 .section-title{
 text-align:center;
-font-size:36px;
 margin-bottom:40px;
-color:#0c2233;
+font-size:40px;
+color:#000;
 }
 
 .about{
@@ -133,20 +123,20 @@ background:#f5f5f5;
 
 .services-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
 }
 
 .service-card{
 background:#fff;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+box-shadow:0 0 15px rgba(0,0,0,.1);
 border-radius:10px;
 overflow:hidden;
 }
 
 .service-card img{
 width:100%;
-height:220px;
+height:250px;
 object-fit:cover;
 }
 
@@ -158,53 +148,59 @@ padding:20px;
 margin-bottom:10px;
 }
 
-.blog-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
-
-.blog-card{
-background:#fff;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-padding:25px;
-border-radius:10px;
-}
-
 .review-container{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
 
 .review{
-background:#f8f8f8;
+background:#fff;
 padding:25px;
-border-left:5px solid #00cfff;
-border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+border-radius:10px;
+}
+
+.review h4{
+margin-top:10px;
+color:#00a8e8;
 }
 
 .faq-item{
 margin-bottom:20px;
-background:#f7f7f7;
+background:#f8f8f8;
 padding:20px;
-border-radius:8px;
+border-left:5px solid #00c3ff;
 }
 
-.contact{
+.blog{
 background:#f5f5f5;
 }
 
-.contact-info{
+.blog-card{
+background:#fff;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+.contact-box{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.contact-info{
+background:#f8f8f8;
+padding:25px;
+border-radius:10px;
 }
 
 footer{
 background:#000;
 color:#fff;
-padding:50px 8%;
+padding:50px 10%;
 }
 
 .footer-grid{
@@ -218,11 +214,18 @@ color:#fff;
 text-decoration:none;
 }
 
-.copyright{
-text-align:center;
-margin-top:30px;
-border-top:1px solid #444;
-padding-top:20px;
+footer ul{
+list-style:none;
+}
+
+footer ul li{
+margin-bottom:10px;
+}
+
+.map iframe{
+width:100%;
+height:250px;
+border:0;
 }
 
 .whatsapp-btn{
@@ -233,10 +236,10 @@ background:#25D366;
 color:#fff;
 width:60px;
 height:60px;
-border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
+border-radius:50%;
 font-size:30px;
 text-decoration:none;
 z-index:999;
@@ -246,143 +249,125 @@ z-index:999;
 position:fixed;
 bottom:90px;
 right:20px;
-background:#00cfff;
-color:#000;
-padding:12px 20px;
-border-radius:30px;
-font-weight:bold;
+background:#007bff;
+color:#fff;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:28px;
 text-decoration:none;
 z-index:999;
 }
 
-iframe{
-width:100%;
-height:250px;
-border:none;
-border-radius:10px;
-}
-
 @media(max-width:768px){
-.hero{
-flex-direction:column;
-text-align:center;
+.hero-content h1{
+font-size:36px;
 }
-
-.hero-text h2{
-font-size:35px;
-}
-
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
+.nav-links{
+display:none;
 }
 }
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
+<div class="navbar">
 
 <div class="logo">
-<img src="Logo.webp" alt="U.S. Pool Builder Logo">
-<h1>U.S. Pool Builder</h1>
+<img src="logo.webp" alt="U.S. Pool Builder Logo">
+<span>U.S. Pool Builder</span>
 </div>
 
-<nav>
-<ul>
+<ul class="nav-links">
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About Us</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#blog">Blog</a></li>
 <li><a href="#contact">Contact Us</a></li>
-<li><a href="#faq">FAQ's</a></li>
 </ul>
-</nav>
 
+</div>
 </header>
 
-<!-- HERO SECTION -->
 <section class="hero" id="home">
-
-<div class="hero-text">
-<h2>Custom Gunite Concrete Pool Builders in Katy, TX</h2>
+<div class="hero-content">
+<h1>Custom Inground Gunite Concrete Pools in Katy, TX</h1>
 
 <p>
-U.S. Pool Builder specializes in custom inground gunite concrete pools designed to match your vision, lifestyle, and outdoor space. We focus on quality craftsmanship, durability, and stunning pool construction.
+Welcome to U.S. Pool Builder, your trusted partner for high-quality pool construction. We design and build custom swimming pools that match your lifestyle, property, and vision.
 </p>
 
-<a href="tel:2819448888" class="btn">Call Now</a>
-<a href="#contact" class="btn">Get Free Estimate</a>
+<a href="tel:+12819448888" class="btn">Call Now</a>
 </div>
-
-<div class="hero-image">
-<img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=900" alt="Luxury Pool">
-</div>
-
 </section>
 
-<!-- ABOUT -->
 <section class="about" id="about">
-
 <h2 class="section-title">About Us</h2>
 
 <p>
-Welcome to U.S. Pool Builder, your trusted partner for professional pool construction in Katy, Texas. We specialize in building high-quality inground gunite concrete pools that are designed for durability, beauty, and long-term enjoyment.
+U.S. Pool Builder specializes in premium inground gunite concrete pool construction in Katy, Texas. We focus exclusively on durable, long-lasting pool designs built with superior craftsmanship and attention to detail.
 </p>
 
 <br>
 
 <p>
-Our team works closely with homeowners to create custom swimming pools that fit their lifestyle and outdoor living goals. Unlike many builders, we focus exclusively on concrete gunite pools and do not offer fiberglass pools, ensuring superior customization and structural strength.
+Our team works closely with homeowners from planning to completion, ensuring every project reflects their unique vision. We do not offer fiberglass pools, allowing us to focus entirely on custom gunite pool solutions.
 </p>
-
 </section>
 
-<!-- SERVICES -->
 <section id="services">
-
 <h2 class="section-title">Our Services</h2>
 
 <div class="services-grid">
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800" alt="">
+<img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=800&q=80" alt="">
 <div class="service-content">
 <h3>Inground Gunite Concrete Pools</h3>
 <p>
-Custom-built gunite concrete pools designed for strength, flexibility, and long-lasting performance.
+Professionally designed and engineered concrete pools built for strength, durability, and long-term performance.
 </p>
 </div>
 </div>
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800" alt="">
+<img src="https://images.unsplash.com/photo-1576013551627-0b744bca024c?auto=format&fit=crop&w=800&q=80" alt="">
 <div class="service-content">
 <h3>New Pool Construction</h3>
 <p>
-Complete pool construction services from planning and design to excavation and final installation.
+Complete swimming pool construction services from design and excavation to finishing and final installation.
 </p>
 </div>
 </div>
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800" alt="">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="">
+<div class="service-content">
+<h3>Custom Pool Design</h3>
+<p>
+Personalized pool layouts tailored to your outdoor space, lifestyle, and aesthetic preferences.
+</p>
+</div>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80" alt="">
 <div class="service-content">
 <h3>No Fiberglass Pools</h3>
 <p>
-We focus exclusively on premium gunite concrete pools, providing greater design freedom and durability.
+We specialize exclusively in custom gunite concrete pools to ensure premium quality and customization options.
 </p>
 </div>
 </div>
 
 </div>
-
 </section>
 
-<!-- REVIEWS -->
 <section>
-
 <h2 class="section-title">Customer Reviews</h2>
 
 <div class="review-container">
@@ -390,175 +375,142 @@ We focus exclusively on premium gunite concrete pools, providing greater design 
 <div class="review">
 ★★★★★
 <p>
-"U.S. Pool Builder delivered an amazing custom pool for our family. The workmanship and communication were excellent."
+Excellent workmanship and communication throughout the project. Our pool turned out exactly as planned.
 </p>
-<strong>- Michael R.</strong>
+<h4>Michael R.</h4>
 </div>
 
 <div class="review">
 ★★★★★
 <p>
-"Our backyard was transformed into a beautiful outdoor retreat. Highly recommend this team."
+The team was professional, responsive, and delivered a beautiful custom pool on schedule.
 </p>
-<strong>- Sarah T.</strong>
+<h4>Sarah T.</h4>
 </div>
 
 <div class="review">
 ★★★★★
 <p>
-"The project was completed professionally and the final result exceeded our expectations."
+Very satisfied with the quality and attention to detail. Highly recommend U.S. Pool Builder.
 </p>
-<strong>- David P.</strong>
+<h4>David W.</h4>
 </div>
 
 </div>
-
 </section>
 
-<!-- BLOG -->
-<section id="blog">
-
-<h2 class="section-title">Latest Blog Posts</h2>
-
-<div class="blog-grid">
-
-<div class="blog-card">
-<h3>Benefits of Gunite Pools</h3>
-<p>
-Learn why gunite concrete pools are one of the most durable and customizable pool options available today.
-</p>
-</div>
-
-<div class="blog-card">
-<h3>Pool Design Trends for 2026</h3>
-<p>
-Explore the latest swimming pool designs, features, and outdoor living enhancements.
-</p>
-</div>
-
-<div class="blog-card">
-<h3>Planning a New Pool Project</h3>
-<p>
-Important factors homeowners should consider before starting a custom pool build.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- FAQ -->
-<section id="faq">
-
+<section>
 <h2 class="section-title">Frequently Asked Questions</h2>
 
 <div class="faq-item">
 <h3>Do you build fiberglass pools?</h3>
-<p>No. We specialize exclusively in inground gunite concrete pools.</p>
+<p>No. We specialize exclusively in custom inground gunite concrete pools.</p>
 </div>
 
 <div class="faq-item">
-<h3>How long does pool construction take?</h3>
-<p>Project timelines vary depending on design and site conditions, but most projects take several weeks.</p>
+<h3>Do you provide custom pool designs?</h3>
+<p>Yes. Every project is customized according to your vision and property layout.</p>
 </div>
 
 <div class="faq-item">
-<h3>Can I customize my pool design?</h3>
-<p>Absolutely. Every pool is custom-designed to match your property and lifestyle.</p>
+<h3>What areas do you serve?</h3>
+<p>We proudly serve Katy, TX, and surrounding communities.</p>
 </div>
 
 <div class="faq-item">
-<h3>Do you provide free estimates?</h3>
-<p>Yes. Contact us today for a consultation and project estimate.</p>
+<h3>How do I get started?</h3>
+<p>Simply call us or send an email to schedule your consultation.</p>
 </div>
 
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
+<section class="blog" id="blog">
+<h2 class="section-title">Latest Blog</h2>
 
+<div class="blog-card">
+<h3>Benefits of Choosing Gunite Concrete Pools</h3>
+<p>
+Gunite pools offer superior durability, unlimited customization, and long-lasting performance compared to other pool types.
+</p>
+</div>
+
+<div class="blog-card">
+<h3>How to Plan Your Backyard Pool Project</h3>
+<p>
+Learn the essential steps to designing and building a pool that complements your outdoor living space.
+</p>
+</div>
+</section>
+
+<section id="contact">
 <h2 class="section-title">Contact Us</h2>
 
+<div class="contact-box">
+
 <div class="contact-info">
+<h3>Business Information</h3>
+<p><strong>Phone:</strong> (281) 944-8888</p>
+<p><strong>Email:</strong> info@USPoolBuilder.com</p>
+<p><strong>Address:</strong> 24044 Cinco Village Center Blvd, Suite 100, Katy, TX 77494, United States</p>
+<p><strong>Hours:</strong> Mon - Sat: 24 Hours</p>
+</div>
+
+<div class="map">
+<iframe src="https://maps.google.com/maps?q=24044%20Cinco%20Village%20Center%20Blvd%20Suite%20100%20Katy%20TX%2077494&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+
+</div>
+</section>
+
+<footer>
+<div class="footer-grid">
 
 <div>
-<h3>Address</h3>
-<p>24044 Cinco Village Center Blvd, Suite 100, Katy, TX 77494, United States</p>
+<h3>Quick Links</h3>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </div>
 
 <div>
-<h3>Phone</h3>
-<p><a href="tel:2819448888">(281) 944-8888</a></p>
-</div>
-
-<div>
-<h3>Email</h3>
-<p><a href="mailto:info@USPoolBuilder.com">info@USPoolBuilder.com</a></p>
-</div>
-
-<div>
-<h3>Working Hours</h3>
+<h3>Contact Information</h3>
+<p>24044 Cinco Village Center Blvd, Suite 100, Katy, TX 77494</p>
+<p>(281) 944-8888</p>
+<p>info@USPoolBuilder.com</p>
 <p>Mon - Sat: 24 Hours</p>
+</div>
+
+<div>
+<h3>Google Business Profile</h3>
+<a href="https://maps.app.goo.gl/T3pa1wprCmvcbkCR8" target="_blank">
+View on Google Maps
+</a>
 </div>
 
 </div>
 
 <br><br>
 
-<iframe src="https://maps.google.com/maps?q=24044%20Cinco%20Village%20Center%20Blvd%20Suite%20100%20Katy%20TX%2077494&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+<hr>
 
-</section>
+<br>
 
-<!-- FOOTER -->
-<footer>
-
-<div class="footer-grid">
-
-<div>
-<h3>Quick Links</h3>
-<p><a href="#home">Home</a></p>
-<p><a href="#about">About Us</a></p>
-<p><a href="#services">Services</a></p>
-<p><a href="#blog">Blog</a></p>
-<p><a href="#contact">Contact</a></p>
-</div>
-
-<div>
-<h3>Contact Information</h3>
-<p>📍 24044 Cinco Village Center Blvd, Suite 100, Katy, TX 77494</p>
-<p>📞 (281) 944-8888</p>
-<p>✉️ info@USPoolBuilder.com</p>
-</div>
-
-<div>
-<h3>Working Hours</h3>
-<p>Mon - Sat: 24 Hours</p>
-</div>
-
-<div>
-<h3>Google Business Profile</h3>
-<p>
-<a href="https://maps.app.goo.gl/T3pa1wprCmvcbkCR8" target="_blank">
-View on Google Maps
-</a>
-</p>
-</div>
-
-</div>
-
-<div class="copyright">
+<p style="text-align:center;">
 © 2026 The Ranking Geeks. All Rights Reserved.
-</div>
+</p>
 
 </footer>
 
-<!-- FLOATING BUTTONS -->
-<a href="tel:2819448888" class="call-btn">
-<i class="fas fa-phone"></i> Call Now
-</a>
-
 <a href="https://wa.me/12819448888" class="whatsapp-btn" target="_blank">
 <i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="tel:+12819448888" class="call-btn">
+<i class="fas fa-phone"></i>
 </a>
 
 </body>
